@@ -38,12 +38,12 @@
             $(".outer").hover( function() {
                 if ( !$(this).hasClass("animated") ) {
                     $(this).find(".inner").dequeue().stop().animate({
-                        "padding-bottom": "45px"
+                        paddingBottom: "45px"
                     }, 150, "swing");
                 }
             }, function() {
                 $(this).addClass("animated").find(".inner").animate({
-                    "padding-bottom": "0"
+                    paddingBottom: "0"
                 }, 200, "swing", function() {
                     $(this).parents(".outer").removeClass("animated").dequeue();
                 }
