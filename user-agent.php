@@ -21,8 +21,16 @@
           <div class="site-wrapper-inner">
             <div class="container">
               <div class="starter-template">
-                <?php echo '<h1>'. $_SERVER['HTTP_USER_AGENT'] .'</h1>'; ?>
+                <h1>You are using:</h1>
+                <?php echo '<p>'. $_SERVER['HTTP_USER_AGENT'] .'</p>'; ?>
               </div>
+              <h3>$_SERVER</h3>
+              <pre>
+                <?php foreach ($_SERVER as $key => $value) {
+                  echo $key . ' = ' . $value;
+                  echo '</br>';
+                } ?>
+              </pre>
             </div>
           </div>
         </div>
