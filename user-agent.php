@@ -27,8 +27,7 @@
               <h3>$_SERVER</h3>
               <pre>
                 <?php foreach ($_SERVER as $key => $value) {
-                  echo $key . ' = ' . $value;
-                  echo '</br>';
+                  echo $key . ' = ' . $value . "\n";
                 } ?>
               </pre>
             </div>
